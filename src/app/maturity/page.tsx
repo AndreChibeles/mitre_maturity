@@ -26,7 +26,7 @@ export default function MaturityPage() {
   const handleServiceToggle = (service: string) => {
     setSelectedServices((prev) => {
       const isSelected = prev.includes(service);
-      let nextServices = isSelected ? prev.filter((s) => s !== service) : [...prev, service];
+  const nextServices = isSelected ? prev.filter((s) => s !== service) : [...prev, service];
 
       // Handle technique toggling for services with mapped techniques
       if (serviceTechniqueMap[service]) {
